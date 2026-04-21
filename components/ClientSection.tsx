@@ -71,7 +71,7 @@ export default function ClientSection() {
 
               {/* Client Description */}
               <div className="flex-1 text-center lg:text-left">
-                <div className="text-accent text-xs font-bold tracking-widest uppercase mb-4">Official Security Partner</div>
+                <div className="text-accent text-xs font-bold tracking-widest uppercase mb-4">Official Housekeeping, Sanitation & Security Partner</div>
                 <h3 className="text-3xl md:text-4xl font-bold text-white mb-6 tracking-tight leading-tight">
                   Bihar Education Department
                 </h3>

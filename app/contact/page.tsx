@@ -42,7 +42,7 @@ export default function ContactPage() {
     {
       icon: MapPin,
       title: "HQ & Branch",
-      details: ["Main: Uttam Nagar", "Branch: New Delhi Area"],
+      details: ["Plot No - J47A, Mohan Garden, Delhi, 110059, India"],
       color: "text-accent",
     },
     {
