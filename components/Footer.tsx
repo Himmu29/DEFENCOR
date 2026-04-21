@@ -30,16 +30,16 @@ export default function Footer() {
         <div className="absolute top-0 right-0 w-[300px] h-[300px] bg-accent/5 rounded-full blur-[100px] pointer-events-none" />
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
-          
+
           {/* Column 1: Brand & Bio */}
           <div className="flex flex-col gap-6">
             <Link href="/" className="flex items-center gap-3 group">
               <div className="relative p-1 rounded-xl bg-white/5 border border-white/10 overflow-hidden">
-                <Image 
-                  src="/images/logo.jpeg" 
-                  alt="AegisSec Logo" 
-                  width={40} 
-                  height={40} 
+                <Image
+                  src="/images/logo.jpeg"
+                  alt="AegisSec Logo"
+                  width={40}
+                  height={40}
                   className="rounded-lg object-cover"
                 />
               </div>
@@ -81,9 +81,12 @@ export default function Footer() {
           </div>
 
           {/* Column 4: Contact Info */}
+          {/* Column 4: Contact Info */}
           <div>
             <h4 className="text-white font-black uppercase tracking-[0.2em] text-xs mb-8">Headquarters</h4>
+
             <ul className="space-y-6">
+              {/* HQ Address */}
               <li className="flex items-start gap-4">
                 <MapPin size={18} className="text-accent shrink-0" />
                 <span className="text-sm text-gray-400 leading-snug">
@@ -91,28 +94,46 @@ export default function Footer() {
                   Uttam Nagar, New Delhi - 110059
                 </span>
               </li>
+
+              {/* Phones */}
               <li className="flex items-center gap-4">
                 <Phone size={18} className="text-accent shrink-0" />
                 <div className="flex flex-col text-sm text-gray-400">
                   <span>+91 97173 92293</span>
-                  <span>+91 99715 83144</span>
+                  <span>+91 92292 57441</span>
                 </div>
               </li>
+
+              {/* Email */}
               <li className="flex items-center gap-4">
                 <Mail size={18} className="text-accent shrink-0" />
                 <span className="text-sm text-gray-400">Defencor2025@gmail.com</span>
               </li>
             </ul>
-          </div>
 
+            {/* 🔥 Branch Section */}
+            <div className="mt-10">
+              <h4 className="text-white font-black uppercase tracking-[0.2em] text-xs mb-4">
+                Branch Office
+              </h4>
+
+              <div className="flex items-start gap-4">
+                <MapPin size={18} className="text-accent shrink-0" />
+                <span className="text-sm text-gray-400 leading-snug">
+                  Ward No. 12, Near Library, Sardiha, West Tola, <br />
+                  Simri Bakhtiyarpur, Saharsa, Bihar - 852127
+                </span>
+              </div>
+            </div>
+          </div>
         </div>
 
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-[10px] font-bold uppercase tracking-[0.2em] text-gray-600">
           <p>© {currentYear} DEFENCOR. All rights reserved.</p>
           <div className="flex gap-8">
-            <Link href="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link>
-            <Link href="/terms" className="hover:text-white transition-colors">Terms of Service</Link>
+            <Link href="/contact" className="hover:text-white transition-colors">Privacy Policy</Link>
+            <Link href="/contact" className="hover:text-white transition-colors">Terms of Service</Link>
           </div>
         </div>
       </div>

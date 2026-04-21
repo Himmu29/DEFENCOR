@@ -13,13 +13,60 @@ import { useParams } from "next/navigation";
 const serviceDetails = {
   "manned-guarding": {
     title: "Manned Guarding",
-    subtitle: "Elite physical protection for absolute operational continuity.",
-    description: "Our Manned Guarding services provide more than just a presence; we provide a proactive shield. Every operative is vetted through a multi-tier background check and trained in tactical de-escalation and rapid response protocols.",
-    features: ["24/7 Tactical Monitoring", "Advanced Access Control", "Digital Incident Logging", "First-Responder Certification"],
+    subtitle: "High quality and trusted guarding services to meet every business need.",
+    description: "Our Manned Guarding services provide more than just a presence; we provide a proactive shield. We make a difference in our service deliveries through strictly vetted personnel.",
+    features: ["Vetted Security Personnel", "Access Control & Monitoring", "24/7 Site Protection", "Incident Reporting"],
     stats: { clients: "500+", success: "99.9%", personnel: "1,200+" },
     image: "https://images.unsplash.com/photo-1582139329536-e7284fece509?q=80&w=2000"
   },
-  // ... other services
+  "consultancy": {
+    title: "Security Consultancy",
+    subtitle: "Comprehensive security plans and intuitive design for a safe environment.",
+    description: "Our intuitive approach provides unsurpassed designs and easily practicable procedures. We create safe environments for your business through strategic planning.",
+    features: ["Comprehensive Security Plans", "Practical Safety Procedures", "Strategic Security Design", "Tailored Business Solutions"],
+    stats: { clients: "150+", success: "100%", personnel: "40+" },
+    image: "https://images.unsplash.com/photo-1454165833767-027ffea9e778?q=80&w=2000"
+  },
+  "risk-assessment": {
+    title: "Risk Assessment",
+    subtitle: "Systematic identification and evaluation of risk at your premises.",
+    description: "We determine appropriate ways to eliminate or control threats. Our process involves a meticulous estimation of risk levels to safeguard your infrastructure.",
+    features: ["Systematic Risk Identification", "Vulnerability Evaluation", "Risk Elimination Strategies", "Operational Audits"],
+    stats: { clients: "300+", success: "99.8%", personnel: "60+" },
+    image: "https://images.unsplash.com/photo-1590247813693-5541d1c609fd?q=80&w=2000"
+  },
+  "event-security": {
+    title: "Event & Stadium Security",
+    subtitle: "World-class customer service tailored for high-capacity venues.",
+    description: "Our event service is designed upon a philosophy of excellence. We manage crowds, access, and VIP safety to ensure your event runs without interruption.",
+    features: ["Crowd Management", "Stadium Access Control", "VIP Protection", "Customer Service Excellence"],
+    stats: { clients: "400+", success: "100%", personnel: "2,000+" },
+    image: "https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?q=80&w=2000"
+  },
+  "fire-audit": {
+    title: "Firemen & Fire Audit",
+    subtitle: "Extensively trained firefighters and accidental fire control solutions.",
+    description: "We provide comprehensive solutions to avoid or control accidental fires. Our fire audit identifies hazards before they become emergencies.",
+    features: ["Trained Firefighters", "Comprehensive Fire Audits", "Hazard Identification", "Emergency Life Saving"],
+    stats: { clients: "250+", success: "99.9%", personnel: "100+" },
+    image: "https://images.unsplash.com/photo-1516567727245-ad8c68f3ec93?q=80&w=2000"
+  },
+  "dog-squad": {
+    title: "Dog Squad Services",
+    subtitle: "Well-trained watchdogs and sniffer dogs for all requirements.",
+    description: "Our K9 units are specialized in detection and deterrence. We provide both watchdogs for patrol and sniffer dogs for specialized security needs.",
+    features: ["Trained Sniffer Dogs", "Patrol Watchdogs", "Detection Services", "K9 Handling Expertise"],
+    stats: { clients: "180+", success: "99.7%", personnel: "80+" },
+    image: "https://images.unsplash.com/photo-1548092372-0d1bd40894a3?q=80&w=2000"
+  },
+  "outsourcing": {
+    title: "Outsourcing Solutions",
+    subtitle: "Managing every aspect of your security and workforce requirements.",
+    description: "We provide integrated outsourcing solutions that cover every aspect of your business security, allowing you to focus on your core operations.",
+    features: ["Workforce Management", "Integrated Security Logistics", "Resource Outsourcing", "Operational Support"],
+    stats: { clients: "120+", success: "99.5%", personnel: "300+" },
+    image: "https://images.unsplash.com/photo-1521791136366-398517526fed?q=80&w=2000"
+  }
 };
 
 export default function ServiceDetailPage() {
@@ -29,7 +76,7 @@ export default function ServiceDetailPage() {
   const service = serviceDetails[slug as keyof typeof serviceDetails] || {
     title: slug.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' '),
     subtitle: "Professional security solutions tailored to your unique risk profile.",
-    description: "AegisSec deploys state-of-the-art security architectures designed to mitigate modern threats. From physical assets to personnel safety, we ensure your world remains secure.",
+    description: "DEFENCOR deploys state-of-the-art security architectures designed to mitigate modern threats. From physical assets to personnel safety, we ensure your world remains secure.",
     features: ["Customized Risk Mapping", "Rapid Response Units", "Elite Operatives", "24/7 Command Center"],
     stats: { clients: "200+", success: "100%", personnel: "450+" },
     image: "https://images.unsplash.com/photo-1557597774-9d2739f85a76?q=80&w=2000"
@@ -84,7 +131,7 @@ export default function ServiceDetailPage() {
       </section>
 
       {/* --- STATS BAR --- */}
-      <div className="container mx-auto px-4 md:px-12 -mt-10 relative z-20">
+      {/* <div className="container mx-auto px-4 md:px-12 -mt-10 relative z-20">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 p-8 bg-secondary/50 backdrop-blur-xl border border-white/10 rounded-3xl">
           {[
             { label: "Active Deployments", val: service.stats.clients, icon: Globe },
@@ -101,7 +148,7 @@ export default function ServiceDetailPage() {
             </div>
           ))}
         </div>
-      </div>
+      </div> */}
 
       {/* --- CONTENT SECTION --- */}
       <main className="container mx-auto px-4 md:px-12 py-24">
@@ -157,7 +204,7 @@ export default function ServiceDetailPage() {
                   </div>
                   <div>
                     <p className="text-[10px] uppercase font-bold tracking-tighter">Emergency Line</p>
-                    <p className="text-white font-mono text-lg">+1 800-AEGIS-SEC</p>
+                    <p className="text-white font-mono text-lg">92292 57441</p>
                   </div>
                 </div>
               </div>

@@ -1,5 +1,6 @@
 import Hero from "@/components/Hero";
 import ServiceSlider from "@/components/ServiceSlider";
+import ClientSection from "@/components/ClientSection";
 import SocialProof from "@/components/SocialProof";
 
 export default function Home() {
@@ -8,6 +9,7 @@ export default function Home() {
       <Hero />
       <ServiceSlider />
       <SocialProof />
+      <ClientSection />
     </div>
   );
 }

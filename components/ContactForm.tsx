@@ -22,16 +22,24 @@ export default function ContactForm() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
-    // Simulate API call
+
+    const { name, email, phone, message } = formData;
+
+    const whatsappMessage = `Hello, I have a query:
+
+  Name: ${name}
+  Email: ${email}
+  Phone: ${phone}
+  Message: ${message}`;
+
+    const encodedMessage = encodeURIComponent(whatsappMessage);
+    const whatsappURL = `https://wa.me/9229257441?text=${encodedMessage}`;
+
     setTimeout(() => {
+      window.open(whatsappURL, "_blank");
       setIsSubmitting(false);
       setIsSuccess(true);
-      setFormData({ name: "", email: "", phone: "", message: "" });
-      
-      // Reset success state after 5 seconds
-      setTimeout(() => setIsSuccess(false), 5000);
-    }, 1500);
+    }, 800);
   };
 
   if (isSuccess) {
@@ -60,9 +68,9 @@ export default function ContactForm() {
   return (
     <div className="glass-card rounded-2xl p-8 border border-white/5 shadow-2xl relative overflow-hidden">
       <div className="absolute top-0 right-0 w-32 h-32 bg-accent/10 rounded-full blur-3xl -mr-16 -mt-16 pointer-events-none" />
-      
+
       <h3 className="text-2xl font-bold text-white mb-6">Send us a Message</h3>
-      
+
       <form onSubmit={handleSubmit} className="space-y-6 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="space-y-2">
@@ -75,7 +83,7 @@ export default function ContactForm() {
               value={formData.name}
               onChange={handleChange}
               className="w-full bg-primary/50 border border-white/10 rounded-lg px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent transition-all"
-              placeholder="John Doe"
+              placeholder="Your Name"
             />
           </div>
           <div className="space-y-2">
@@ -88,7 +96,7 @@ export default function ContactForm() {
               value={formData.email}
               onChange={handleChange}
               className="w-full bg-primary/50 border border-white/10 rounded-lg px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent transition-all"
-              placeholder="john@example.com"
+              placeholder="example@gmail.com"
             />
           </div>
         </div>
@@ -102,7 +110,7 @@ export default function ContactForm() {
             value={formData.phone}
             onChange={handleChange}
             className="w-full bg-primary/50 border border-white/10 rounded-lg px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent transition-all"
-            placeholder="+1 (555) 000-0000"
+            placeholder="+91  12000 60000"
           />
         </div>
 

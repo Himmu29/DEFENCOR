@@ -13,9 +13,9 @@ export default function Hero() {
   ]);
 
   const slides = [
-    { src: "/images/hero_1.png", alt: "Tactical Security Operations" },
-    { src: "/images/hero_2.png", alt: "High-Tech Command Center" },
-    { src: "/images/hero_3.png", alt: "Executive Protection Detail" },
+    { src: "/images/photo-1.jpeg", alt: "Tactical Security Operations" },
+    { src: "/images/photo-2.jpeg", alt: "High-Tech Command Center" },
+    { src: "/images/photo-3.jpeg", alt: "Executive Protection Detail" },
   ];
 
   return (
@@ -25,7 +25,7 @@ export default function Hero() {
         <div className="flex h-full">
           {slides.map((slide, index) => (
             <div className="relative flex-[0_0_100%] h-full overflow-hidden" key={index}>
-              <motion.div 
+              <motion.div
                 initial={{ scale: 1.2 }}
                 animate={{ scale: 1 }}
                 transition={{ duration: 6, ease: "linear" }}
@@ -36,7 +36,7 @@ export default function Hero() {
                   alt={slide.alt}
                   fill
                   priority={index === 0}
-                  className="object-cover opacity-30 brightness-75"
+                  className="object-cover opacity-80 brightness-75"
                 />
               </motion.div>
             </div>
@@ -50,18 +50,6 @@ export default function Hero() {
 
       {/* Hero Content */}
       <div className="relative z-20 h-full flex flex-col justify-center items-center text-center px-4 pt-20">
-        
-        {/* Status Badge */}
-        <motion.div
-          initial={{ opacity: 0, scale: 0.8 }}
-          animate={{ opacity: 1, scale: 1 }}
-          className="mb-8 flex items-center gap-2 px-4 py-1.5 rounded-full bg-accent/10 border border-accent/20 backdrop-blur-md"
-        >
-          <Activity size={14} className="text-accent animate-pulse" />
-          <span className="text-[10px] font-black uppercase tracking-[0.3em] text-accent">
-            DEFENCOR
-          </span>
-        </motion.div>
 
         <motion.h1
           initial={{ opacity: 0, y: 40 }}
@@ -110,7 +98,7 @@ export default function Hero() {
 
       {/* Bottom Authority Ticker */}
       <div className="absolute bottom-10 left-0 w-full z-20 overflow-hidden py-4 border-y border-white/5 bg-black/20 backdrop-blur-sm">
-        <motion.div 
+        <motion.div
           animate={{ x: [0, -1000] }}
           transition={{ repeat: Infinity, duration: 30, ease: "linear" }}
           className="flex whitespace-nowrap gap-20 items-center opacity-30"
