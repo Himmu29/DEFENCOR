@@ -25,7 +25,7 @@ const serviceDetails = {
     description: "Our intuitive approach provides unsurpassed designs and easily practicable procedures. We create safe environments for your business through strategic planning.",
     features: ["Comprehensive Security Plans", "Practical Safety Procedures", "Strategic Security Design", "Tailored Business Solutions"],
     stats: { clients: "150+", success: "100%", personnel: "40+" },
-    image: "https://images.unsplash.com/photo-1454165833767-027ffea9e778?q=80&w=2000"
+    image: "/images/photo-1.jpeg"
   },
   "risk-assessment": {
     title: "Risk Assessment",
@@ -33,7 +33,7 @@ const serviceDetails = {
     description: "We determine appropriate ways to eliminate or control threats. Our process involves a meticulous estimation of risk levels to safeguard your infrastructure.",
     features: ["Systematic Risk Identification", "Vulnerability Evaluation", "Risk Elimination Strategies", "Operational Audits"],
     stats: { clients: "300+", success: "99.8%", personnel: "60+" },
-    image: "https://images.unsplash.com/photo-1590247813693-5541d1c609fd?q=80&w=2000"
+    image: "/images/photo-2.jpeg"
   },
   "event-security": {
     title: "Event & Stadium Security",
@@ -41,7 +41,7 @@ const serviceDetails = {
     description: "Our event service is designed upon a philosophy of excellence. We manage crowds, access, and VIP safety to ensure your event runs without interruption.",
     features: ["Crowd Management", "Stadium Access Control", "VIP Protection", "Customer Service Excellence"],
     stats: { clients: "400+", success: "100%", personnel: "2,000+" },
-    image: "https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?q=80&w=2000"
+    image: "/images/photo-3.jpeg"
   },
   "fire-audit": {
     title: "Firemen & Fire Audit",
@@ -49,7 +49,7 @@ const serviceDetails = {
     description: "We provide comprehensive solutions to avoid or control accidental fires. Our fire audit identifies hazards before they become emergencies.",
     features: ["Trained Firefighters", "Comprehensive Fire Audits", "Hazard Identification", "Emergency Life Saving"],
     stats: { clients: "250+", success: "99.9%", personnel: "100+" },
-    image: "https://images.unsplash.com/photo-1516567727245-ad8c68f3ec93?q=80&w=2000"
+    image: "/images/photo-4.jpeg"
   },
   "dog-squad": {
     title: "Dog Squad Services",
@@ -57,7 +57,7 @@ const serviceDetails = {
     description: "Well-trained watchdogs and sniffer dogs for all requirements. We provide both watchdogs for patrol and sniffer dogs for specialized security needs.",
     features: ["Trained Sniffer Dogs", "Patrol Watchdogs", "Detection Services", "K9 Handling Expertise"],
     stats: { clients: "180+", success: "99.7%", personnel: "80+" },
-    image: "https://images.unsplash.com/photo-1548092372-0d1bd40894a3?q=80&w=2000"
+    image: "/images/photo-5.jpeg"
   },
   "outsourcing": {
     title: "Outsourcing Solutions",
@@ -65,7 +65,7 @@ const serviceDetails = {
     description: "We provide integrated outsourcing solutions that cover every aspect of your business security, allowing you to focus on your core operations.",
     features: ["Workforce Management", "Integrated Security Logistics", "Resource Outsourcing", "Operational Support"],
     stats: { clients: "120+", success: "99.5%", personnel: "300+" },
-    image: "https://images.unsplash.com/photo-1521791136366-398517526fed?q=80&w=2000"
+    image: "/images/hero_1.png"
   }
 };
 

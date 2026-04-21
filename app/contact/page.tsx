@@ -150,12 +150,12 @@ export default function ContactPage() {
             {/* Dual Maps Stack */}
             <div className="flex flex-col gap-6">
               <TacticalMap 
-                title="Main HQ: Uttam Nagar" 
+                title="Main HQ: New Delhi" 
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7004.2849301277165!2d77.02726269357909!3d28.625491999999987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d05529418d305%3A0x119b3434b634900f!2sDefencor%20Services%20Private%20Limited!5e0!3m2!1sen!2sus!4v1776758077299!5m2!1sen!2sus" 
                 delay={0.7} 
               />
               <TacticalMap 
-                title="Regional Branch: Delhi" 
+                title="Regional Branch: Bihar" 
                 src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3593.668925045889!2d86.55026307539994!3d25.748459977360252!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjXCsDQ0JzU0LjUiTiA4NsKwMzMnMTAuMiJF!5e0!3m2!1sen!2sin!4v1776758345843!5m2!1sen!2sin" 
                 delay={0.8} 
               />

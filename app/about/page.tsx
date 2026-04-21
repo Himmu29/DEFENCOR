@@ -89,7 +89,7 @@ export default function AboutPage() {
           {/* SECTION 2: PARALLAX MASONRY */}
           <div className="relative h-[600px] w-full">
             <motion.div style={{ y: y1 }} className="absolute top-0 left-0 w-[55%] h-[70%] rounded-[2rem] overflow-hidden border border-white/10 shadow-2xl">
-              <Image src="/images/photo-4.jpeg" alt="Tactical" fill className="object-cover transition-transform duration-700 hover:scale-110" />
+              <Image src="/images/photo-2.jpeg" alt="Tactical" fill className="object-cover transition-transform duration-700 hover:scale-110" />
             </motion.div>
             
             <motion.div style={{ y: y2 }} className="absolute bottom-0 right-0 w-[50%] h-[60%] rounded-[2rem] overflow-hidden border border-white/10 shadow-2xl z-20">
