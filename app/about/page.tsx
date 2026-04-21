@@ -44,7 +44,7 @@ export default function AboutPage() {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-accent"></span>
               </span>
-              The Aegis Legacy
+              The DEFENCOR Legacy
             </div>
             
             <h1 className="text-5xl md:text-7xl font-black mb-8 tracking-tighter leading-[0.9]">
@@ -53,15 +53,15 @@ export default function AboutPage() {
             </h1>
 
             <p className="text-xl text-gray-400 mb-8 leading-relaxed max-w-xl font-light">
-              Founded on the pillars of integrity and tactical excellence, AegisSec isn't just a security provider—we are a strategic partner in your safety. 
+              Founded on the pillars of integrity and tactical excellence, DEFENCOR isn't just a security provider—we are a strategic partner in your safety. 
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-12">
               {[
-                "Military-Grade Precision",
-                "24/7 Intelligence Sync",
-                "Bespoke Risk Mapping",
-                "Elite Global Operatives"
+                "Quality Precision",
+                "24/7 Reliable Security",
+                "Practical Security",
+                "Trusted Operatives"
               ].map((item, idx) => (
                 <div key={idx} className="flex items-center gap-3 group">
                   <div className="h-8 w-8 rounded-lg bg-secondary flex items-center justify-center border border-white/5 group-hover:border-accent/50 transition-colors">
@@ -81,7 +81,7 @@ export default function AboutPage() {
                 "We don't react to threats; we engineer environments where threats cannot exist."
               </p>
               <p className="mt-4 text-xs font-black uppercase tracking-[0.2em] text-accent">
-                — Managing Director, AegisSec
+                — Managing Director, DEFENCOR
               </p>
             </motion.div>
           </motion.div>
@@ -89,11 +89,11 @@ export default function AboutPage() {
           {/* SECTION 2: PARALLAX MASONRY */}
           <div className="relative h-[600px] w-full">
             <motion.div style={{ y: y1 }} className="absolute top-0 left-0 w-[55%] h-[70%] rounded-[2rem] overflow-hidden border border-white/10 shadow-2xl">
-              <Image src="/images/hero_1.png" alt="Tactical" fill className="object-cover transition-transform duration-700 hover:scale-110" />
+              <Image src="/images/photo-1.jpeg" alt="Tactical" fill className="object-cover transition-transform duration-700 hover:scale-110" />
             </motion.div>
             
             <motion.div style={{ y: y2 }} className="absolute bottom-0 right-0 w-[50%] h-[60%] rounded-[2rem] overflow-hidden border border-white/10 shadow-2xl z-20">
-              <Image src="/images/hero_2.png" alt="Consultancy" fill className="object-cover transition-transform duration-700 hover:scale-110" />
+              <Image src="/images/photo-2.jpeg" alt="Consultancy" fill className="object-cover transition-transform duration-700 hover:scale-110" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
             </motion.div>
 

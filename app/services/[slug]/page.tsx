@@ -54,7 +54,7 @@ const serviceDetails = {
   "dog-squad": {
     title: "Dog Squad Services",
     subtitle: "Well-trained watchdogs and sniffer dogs for all requirements.",
-    description: "Our K9 units are specialized in detection and deterrence. We provide both watchdogs for patrol and sniffer dogs for specialized security needs.",
+    description: "Well-trained watchdogs and sniffer dogs for all requirements. We provide both watchdogs for patrol and sniffer dogs for specialized security needs.",
     features: ["Trained Sniffer Dogs", "Patrol Watchdogs", "Detection Services", "K9 Handling Expertise"],
     stats: { clients: "180+", success: "99.7%", personnel: "80+" },
     image: "https://images.unsplash.com/photo-1548092372-0d1bd40894a3?q=80&w=2000"

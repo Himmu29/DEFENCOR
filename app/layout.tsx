@@ -7,7 +7,7 @@ import Footer from "@/components/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "AegisSec | Elite Security Agency",
+  title: "DEFENCOR | Elite Security Agency",
   description: "High-performance, professional Security Agency providing elite protection, consultancy, and risk assessment.",
 };
 

@@ -69,7 +69,7 @@ export default function Hero() {
           transition={{ duration: 1, delay: 0.3 }}
           className="text-lg md:text-2xl text-gray-400 max-w-2xl mb-12 font-light leading-relaxed"
         >
-          Deploying world-class security architectures tailored for high-risk corporate and residential environments.
+          High quality and trusted man guarding service to meet the business need.
         </motion.p>
 
         {/* Action Buttons */}
