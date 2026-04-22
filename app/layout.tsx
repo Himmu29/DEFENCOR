@@ -8,6 +8,9 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://defencor.in'), // Replace with actual domain if known
+  verification: {
+    google: "2qTTec0691QUfHFhK4O_dtRy-I4HMdZ8nr-IqqZBvJo",
+  },
   title: {
     default: "DEFENCOR | Elite Security Agency",
     template: "%s | DEFENCOR",
